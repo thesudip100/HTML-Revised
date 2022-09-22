@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myname" id="name">
+        </div> <br>
+        <!--label tag ko for ma jasko lagi label ho tesko id dina parchha. esma yo label name ko lagi banairaako ho so name ko id chai label ko for ma diney
+        -->
+
+        <div>
+            Address:<input type="text" name="myaddress">
+        </div><br>
+        <!--Here, it is placed inside div tag for the line break. Line break garna "br" tag use garna pani sakinthyo but its much more better to use div tags
+        name attribute ley chai tyo line lai backend ma chinauchha if we want that in backend
+        -->
+
+        <div>
+            Email: <input type="email" name="myemail">
+        </div> <br>
+
+
+        <div>
+            Birthdate:<input type="date" name="mydate" id="">
+        </div> <br>
+
+        <div>
+            Age:<input type="number" name="mynumber" id="">
+        </div><br>
+
+        <div>
+            Are you eligible? <input type="checkbox" name="myeligible" id="" checked>
+            <!--yesma checked bhanera lekheko vayera by default checked hunchha yo-->
+        </div> <br>
+
+        <div>
+            Gender:Male<input type="radio" name="mygender" id=""> Female<input type="radio" name="mygender" id="">
+        </div> <br>
+
+        <!--mathi, male ra female ko ma name="mygender" bhanera same diyeko chha so euta matra select garna pauchham hamle kinaki "name" ley backend ma pathauna lai select garchha ra backend ma eutai naam bata duita data pathauna ta paidaina
+        -->
+        <div>
+            <textarea name="mytext" id="" cols="40" rows="10">Describe yourself</textarea>
+        </div>
+        <br>
+        <label for="car">Car</label>
+        <select name="mycar" id="car">
+
+            <option value="hyun">Hyundai</option>
+            <option value="toyo" selected>Toyota</option>
+        </select> <br><br>
+        <div>
+            Submit: <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>
